@@ -4,6 +4,8 @@ const NewsItem=(props)=>{
   
     let {title, description, imageUrl, newsUrl, author, date, source} = props;
     return (
+    <>
+    <div className='d-flex justify-content-center'>
       <div className='my-3'>
         <div className="card" style={{width: "18rem"}}>
             <img src={imageUrl?imageUrl:"https://static.vecteezy.com/system/resources/thumbnails/004/216/831/original/3d-world-news-background-loop-free-video.jpg"} className="card-img-top" alt="..."/>
@@ -15,6 +17,8 @@ const NewsItem=(props)=>{
             </div>
         </div>
       </div>
+      </div>
+      </>
     )
   
 }
